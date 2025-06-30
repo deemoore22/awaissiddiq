@@ -301,4 +301,95 @@ a:hover {
     .story-content, .intro-content, .features {
         padding: 1rem;
     }
+}
+
+/* The Little Prince Custom Page Styles */
+.prince-main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #f7f3e9;
+    padding: 2rem 1rem 3rem 1rem;
+}
+
+.prince-title {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 2.7rem;
+    color: #2d2d2d;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-weight: 400;
+    text-shadow: 0 2px 8px #fff8, 0 1px 0 #e0d6c3;
+}
+
+.prince-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.prince-image {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px 0 #cbbfae55;
+    border: 3px solid #e0d6c3;
+    background: #fffbe9;
+}
+
+.prince-quote {
+    max-width: 600px;
+    margin: 0 auto 2.5rem auto;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.18rem;
+    color: #3a2e1a;
+    background: #fffbe9;
+    border-left: 6px solid #e0d6c3;
+    border-radius: 0 12px 12px 0;
+    padding: 1.5rem 2rem 1.5rem 1.5rem;
+    box-shadow: 0 2px 12px #e0d6c355;
+    line-height: 1.7;
+}
+
+.prince-quote p {
+    margin-bottom: 1.2em;
+}
+
+.prince-back-link {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.prince-back-link a {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #764ba2;
+    background: #f7e7ff;
+    padding: 0.6em 1.3em;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px #e0d6c355;
+    transition: background 0.2s, color 0.2s;
+}
+
+.prince-back-link a:hover {
+    background: #e0d6c3;
+    color: #2d2d2d;
+}
+
+@media (max-width: 600px) {
+    .prince-title {
+        font-size: 2rem;
+    }
+    .prince-image {
+        max-width: 95vw;
+    }
+    .prince-quote {
+        font-size: 1rem;
+        padding: 1rem 0.7rem 1rem 0.7rem;
+    }
 } 
