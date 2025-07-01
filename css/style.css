@@ -392,4 +392,139 @@ a:hover {
         font-size: 1rem;
         padding: 1rem 0.7rem 1rem 0.7rem;
     }
+}
+
+/* Profile Image Styles */
+.profile-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 3px solid #667eea;
+    margin: 1rem 0;
+}
+
+.learn-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.learn-more a {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.learn-more a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    text-decoration: none;
+}
+
+/* Skills Table Styles */
+.skills-table {
+    margin: 2rem 0;
+    overflow-x: auto;
+}
+
+.skills-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.skills-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.skills-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    line-height: 1.6;
+}
+
+.skills-table tr:last-child td {
+    border-bottom: none;
+}
+
+.skills-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Photo Gallery Styles */
+.photo-gallery {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.gallery-image {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.back-link a {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.back-link a:hover {
+    background: #5a6fd8;
+    text-decoration: none;
+}
+
+/* Responsive adjustments for new elements */
+@media (max-width: 768px) {
+    .photo-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .gallery-image {
+        max-width: 100%;
+    }
+    
+    .skills-table {
+        font-size: 0.9rem;
+    }
+    
+    .skills-table th,
+    .skills-table td {
+        padding: 0.8rem;
+    }
 } 
